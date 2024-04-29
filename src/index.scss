@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$base-size: 16;
+
+@function size($target, $context: $base-size) {
+  @return calc($target / $context) * 1rem;
+}
+
+:root {
+  --text-18: #{size(18)};
+  --text-20: #{size(20)};
+  --text-22: #{size(23)};
+  --text-25: #{size(25)};
+  --text-26: #{size(26)};
+  --text-28: #{size(28)};
+  --text-33: #{size(33)};
+  --text-40: #{size(40)};
+  --text-60: #{size(60)};
+  --text-h1: #{size(75)};
+  --text-h2: #{size(70)};
+  --text-h3: #{size(65)};
+  --text-h4: #{size(60)};
+  --text-h5: #{size(55)};
+  --text-h6: #{size(40)};
+  --text-80: #{size(80)};
+}
+.container {
+  @apply sm:max-w-[575px] md:max-w-[768px] lg:max-w-[991px] xl:max-w-[1024px] 2xl:max-w-[1280px] 3xl:max-w-[1366px];
+}
+body{
+  position: relative;
+  font-family: "Forum", serif;
+}

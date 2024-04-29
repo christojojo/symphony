@@ -1,0 +1,47 @@
+.btn {
+    @apply shadow-base bg-white;
+    &:hover {
+      @apply bg-gray-100;
+    }
+    &:active {
+      @apply bg-gray-200;
+    }
+    &:disabled {
+      @apply text-gray-400 pointer-events-none select-none;
+    }
+    &.sm {
+      @apply px-nxl
+          py-nxs h-[30px];
+    }
+    &.md {
+      @apply px-n3xl py-nmd h-9;
+    }
+    &.lg {
+      @apply px-n3xl
+          py-nlg h-10;
+    }
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white; 
+    &:hover {
+      @apply bg-blue-700;
+    }
+    &:active {
+      @apply bg-blue-800;
+    }
+    &:disabled {
+      @apply text-blue-200 bg-blue-50 pointer-events-none select-none;
+    }
+    &.sm {
+      @apply px-nxl
+          py-nxs h-[30px];
+    }
+    &.md {
+      @apply px-n3xl py-nmd h-9;
+    }
+    &.lg {
+      @apply px-n3xl
+          py-nlg h-10;
+    }
+  }
