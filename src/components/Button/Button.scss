@@ -1,47 +1,50 @@
+
 .btn {
-    @apply shadow-base bg-white;
-    &:hover {
-      @apply bg-gray-100;
-    }
-    &:active {
-      @apply bg-gray-200;
-    }
-    &:disabled {
-      @apply text-gray-400 pointer-events-none select-none;
-    }
-    &.sm {
-      @apply px-nxl
-          py-nxs h-[30px];
-    }
-    &.md {
-      @apply px-n3xl py-nmd h-9;
-    }
-    &.lg {
-      @apply px-n3xl
-          py-nlg h-10;
-    }
+  @apply bg-white
+       border;
+  &:hover {
+    @apply bg-gray-200;
   }
+  &:active {
+    @apply bg-gray-300;
+  }
+  &:disabled {
+    @apply text-gray-400 pointer-events-none select-none;
+  }
+  // &.md {
+  //   @apply px-lg py-md ;
+  // }
+  // &.lg {
+  //   @apply px-3xl
+  //       py-lg h-10;
+  // }
+}
+
+.btn-default {
+  @apply text-black
+      bg-white
+}
 
   .btn-primary {
-    @apply bg-primary text-white; 
+    @apply  text-[#D98366];
     &:hover {
-      @apply bg-blue-700;
+      @apply bg-[#d98366af];
     }
     &:active {
-      @apply bg-blue-800;
+      @apply bg-[#db886c];
     }
     &:disabled {
-      @apply text-blue-200 bg-blue-50 pointer-events-none select-none;
+      @apply text-white bg-[#b46c53] pointer-events-none select-none;
     }
-    &.sm {
-      @apply px-nxl
-          py-nxs h-[30px];
-    }
-    &.md {
-      @apply px-n3xl py-nmd h-9;
-    }
-    &.lg {
-      @apply px-n3xl
-          py-nlg h-10;
-    }
+    // &.sm {
+    //   @apply px-xl
+    //       py-xs h-[30px];
+    // }
+    // &.md {
+    //   @apply px-3xl py-md h-9;
+    // }
+    // &.lg {
+    //   @apply px-3xl
+    //       py-lg h-10;
+    // }
   }

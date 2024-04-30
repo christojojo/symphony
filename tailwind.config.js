@@ -9,9 +9,11 @@ const textColor = {
 const backgroundColor = {
   // white: "var(--white)",
   // gray: "var(--bg-gray)",
+  enquiryForm: "var(--bg-enquiry-form)"
 };
 const borderColor = {
   gray: "var(--border-color)",
+  formBorder: "var(--form-border)"
 };
 
 const color = {
@@ -26,7 +28,9 @@ const fontSize = {
   25: ["var(--text-25)"],
   26: ["var(--text-26)"],
   28: ["var(--text-28)"],
+  30: ["var(--text-30)"],
   33: ["var(--text-33)"],
+  35: ["var(--text-35)"],
   40: ["var(--text-40)"],
   60: ["var(--text-60)"],
   80: ["var(--text-80)"],
@@ -50,26 +54,26 @@ export default {
     fontFamily: {
       forum: ["Forum", "serif"],
       Cormorant: ["Cormorant Garamond", "serif"],
+      Silk : ["Silk","Serif"],
+      worksans: ["Worksans", "serif"],      
     },
     screens: {
       sm: "575px",
       md: "768px",
       lg: "991px",
       xl: "1024px",
-      "2xl": "1280px",
-      "3xl": "1366px"
+      "2xl": "1400px",
+      "3xl": "1920px"
     },
     container: {
       center: true,
-      padding: {
-        default: "24px",
-        sm: "20px",
-        "2xl": "24px",
-      },
+      padding: '20px',
     },
     fontSize,
 
     extend: {
+      backgroundColor,
+      borderColor,
       height: {
         "banner-height": "calc(100vh - 80px)",
       },

@@ -9,13 +9,16 @@ $base-size: 16;
 }
 
 :root {
+  // font-size
   --text-18: #{size(18)};
   --text-20: #{size(20)};
-  --text-22: #{size(23)};
+  --text-23: #{size(23)};
   --text-25: #{size(25)};
   --text-26: #{size(26)};
   --text-28: #{size(28)};
+  --text-30: #{size(30)};
   --text-33: #{size(33)};
+  --text-35: #{size(35)};
   --text-40: #{size(40)};
   --text-60: #{size(60)};
   --text-h1: #{size(75)};
@@ -25,6 +28,27 @@ $base-size: 16;
   --text-h5: #{size(55)};
   --text-h6: #{size(40)};
   --text-80: #{size(80)};
+  // spacing
+  --space-md: #{size(15)};
+  --space-lg: #{size(30)};
+
+
+  //new spacing variables
+  --n-space-2xs: #{size(2)};
+  --n-space-xs: #{size(4)};
+  --n-space-sm: #{size(6)};
+  --n-space-md: #{size(8)};
+  --n-space-lg: #{size(10)};
+  --n-space-xl: #{size(12)};
+  --n-space-2xl: #{size(14)};
+  --n-space-3xl: #{size(16)};
+  --n-space-4xl: #{size(20)};
+  --n-space-5xl: #{size(24)};
+
+  --bg-enquiry-form: #F8F8F8;
+
+  // border color
+  --form-border: #B2B2B2;
 }
 .container {
   @apply sm:max-w-[575px] md:max-w-[768px] lg:max-w-[991px] xl:max-w-[1024px] 2xl:max-w-[1280px] 3xl:max-w-[1366px];

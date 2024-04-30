@@ -1,5 +1,6 @@
 import React from "react";
 import Assets from "../../common/Assets";
+import Button from "../Button/Button";
 
 function Footer() {
   const footerData = [
@@ -94,16 +95,16 @@ function Footer() {
   return (
     <div className="footer bg-black">
       <div className="container">
-        <div className="pt-[108px] pb-[149px] text-white">
-          <div className="flex justify-between items-center pb-[110px]">
-            <div className="text-60 leading-[70px] font-Cormorant">
+        <div className="py-[80px] md:pt-[108px] 3xl:pt-[108px] pb-[80px] md:pb-[149px] 3xl:pb-[149px] text-white">
+          <div className="flex flex-col gap-[30px] md:gap-0 3xl:gap-0  3xl:flex-row justify-between items-center pb-[60px] md:pb-[110px] 3xl:pb-[110px]">
+            <div className="text-40 3xl:text-60 leading-[50px] md:leading-[70px] 3xl:leading-[70px] font-Cormorant">
               GET STARTED NOW!
             </div>
             <div className="flex flex-col">
               <div className="">
                 <a
                   href="tel:+61 410 201 111"
-                  className="block text-40  pb-[10px] leading-[38px]"
+                  className="block text-26 md:text-26 3xl:text-40 pb-[10px] leading-[26px] md:leading-[38px] 3xl:leading-[38px]"
                 >
                   +61 410 201 111
                 </a>
@@ -111,7 +112,7 @@ function Footer() {
               <div>
                 <a
                   href="https://symphonyevents.com.au/"
-                  className="block text-40 leading-[50px]"
+                  className="block text-26 md:text-26 3xl:text-40 leading-[26px] md:leading-[38px] 3xl:leading-[38px]"
                   target="_blank"
                 >
                   info@symphonyevents.com.au
@@ -120,7 +121,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="flex pb-20">
+          <div className="flex flex-col 3xl:flex-row pb-4 md:pb-20">
             <div className="flex-1">
               {Object.values(footerData).map((section, index) => {
                 if (section.title === "Useful Links") {
@@ -226,7 +227,7 @@ function Footer() {
               })}
             </div>
           </div>
-          <div className="flex pb-[75px]">
+          <div className="flex flex-col md:flex-row 3xl:flex-row gap-[20px] pb-[40px] md:pb-[75px]">
             <span className="block pr-[32px] text-20 leading-[22px]">
               Follow us
             </span>
@@ -253,10 +254,10 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex justify-between">
-            <div>
+          <div className="flex flex-col md:flex-row 3xl:flex-row gap-[30px] md:gap-0 justify-between">
+            <div className="flex flex-col md:flex-row  gap-[30px]">
               <span className="text-18 leading-[22px] text-[#707070] font-normal">Copyright © 2024 Symphony Events. All Rights Reserved</span>
-              <a href="#" className="pl-[20px] text-18 leading-[22px] text-[#707070] font-normal hover:text-white transition-all">privacy policy</a>
+              <a href="#" className="pl-0 md:pl-[20px] text-18 leading-[22px] text-[#707070] font-normal hover:text-white transition-all">privacy policy</a>
             </div>
             <div>
               <span className="text-18 leading-[22px] text-[#707070] font-normal">

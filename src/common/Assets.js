@@ -6,6 +6,9 @@ const facebook = '/images/fb.svg';
 const pintrest = '/images/pintrest.svg';
 const youtube = '/images/youtube.svg';
 const bannerImg = '/images/banner.png';
+const eventDesign = '/images/event-design.png';
+const getInTouch = 'images/getInTouch.png';
+const calenderIcon = 'images/calender-icon.png';
 const Assets = {
     logo,
     userIcon,
@@ -14,7 +17,10 @@ const Assets = {
     facebook,
     youtube,
     pintrest,
-    bannerImg
+    bannerImg,
+    eventDesign,
+    getInTouch,
+    calenderIcon,
 }
 
 export default Assets
