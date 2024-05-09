@@ -58,6 +58,7 @@ function Footer() {
         { title: "Holy Communion", link: "Event-planning/Holy-Communion" },
         { title: "House Warming", link: "Event-planning/House Warming" },
         { title: "Holy Communion", link: "Event-planning/Holy Communion" },
+        { title: "House Warming", link: "Event-planning/House Warming" },
       ],
     },
     {
@@ -75,6 +76,7 @@ function Footer() {
         { title: "Holy Communion", link: "Event-planning/Holy-Communion" },
         { title: "House Warming", link: "Event-planning/House Warming" },
         { title: "Holy Communion", link: "Event-planning/Holy Communion" },
+        { title: "House Warming", link: "Event-planning/House Warming" },
       ],
     },
   ];
@@ -95,34 +97,30 @@ function Footer() {
   return (
     <div className="footer bg-black">
       <div className="container">
-        <div className="py-[80px] md:pt-[108px] 3xl:pt-[108px] pb-[80px] md:pb-[149px] 3xl:pb-[149px] text-white">
-          <div className="flex flex-col gap-[30px] md:gap-0 3xl:gap-0  3xl:flex-row justify-between items-center pb-[60px] md:pb-[110px] 3xl:pb-[110px]">
-            <div className="text-40 3xl:text-60 leading-[50px] md:leading-[70px] 3xl:leading-[70px] font-Cormorant">
+        <div className="py-[80px] md:pt-[80px] 3xl:pt-[108px] pb-[80px] lg:pb-[80px] 3xl:pb-[149px] text-white">
+          <div className="flex flex-col md:flex-row  gap-[30px] md:gap-0 3xl:gap-0  3xl:flex-row  justify-between items-center pb-[55px] md:pb-[50px] 3xl:pb-[110px]">
+            <div className="text-40 w-full 3xl:text-60 leading-[50px] md:leading-[70px] 3xl:leading-[70px] font-Cormorant md:whitespace-nowrap">
               GET STARTED NOW!
             </div>
-            <div className="flex flex-col">
-              <div className="">
-                <a
-                  href="tel:+61 410 201 111"
-                  className="block text-26 md:text-26 3xl:text-40 pb-[10px] leading-[26px] md:leading-[38px] 3xl:leading-[38px]"
-                >
-                  +61 410 201 111
-                </a>
-              </div>
-              <div>
-                <a
-                  href="https://symphonyevents.com.au/"
-                  className="block text-26 md:text-26 3xl:text-40 leading-[26px] md:leading-[38px] 3xl:leading-[38px]"
-                  target="_blank"
-                >
-                  info@symphonyevents.com.au
-                </a>
-              </div>
+            <div className="flex flex-col w-full md:text-right">
+              <a
+                href="tel:+61 410 201 111"
+                className="block text-20 sm:text-23 md:text-26 3xl:text-40 pb-[10px] leading-[26px] md:leading-[38px] 3xl:leading-[38px]"
+              >
+                +61 410 201 111
+              </a>
+              <a
+                href="https://symphonyevents.com.au/"
+                className="block text-20 sm:text-26 md:text-26 3xl:text-40 leading-[26px] md:leading-[38px] 3xl:leading-[38px]"
+                target="_blank"
+              >
+                info@symphonyevents.com.au
+              </a>
             </div>
           </div>
 
-          <div className="flex flex-col 3xl:flex-row pb-4 md:pb-20">
-            <div className="flex-1">
+          <div className="flex flex-col md:flex-row 3xl:flex-row pb-4 md:pb-[30px] 3xl:pb-[60px] *:pb-[20px] md:*:pb-[20px] 3xl:*:pb-0 flex-wrap">
+            <div className="flex-1 md:flex-[50%] 2xl:flex-[25%]">
               {Object.values(footerData).map((section, index) => {
                 if (section.title === "Useful Links") {
                   return (
@@ -145,10 +143,10 @@ function Footer() {
                     </div>
                   );
                 }
-                return null; 
+                return null;
               })}
             </div>
-            <div className="flex-1">
+            <div className="flex-1 md:flex-[50%] 2xl:flex-[25%]">
               {Object.values(footerData).map((section, index) => {
                 if (section.title === "Wedding Planning") {
                   return (
@@ -171,10 +169,10 @@ function Footer() {
                     </div>
                   );
                 }
-                return null; 
+                return null;
               })}
             </div>
-            <div className="flex-1">
+            <div className="flex-1  md:flex-[50%] 2xl:flex-[25%]">
               {Object.values(footerData).map((section, index) => {
                 if (section.title === "Event planning") {
                   return (
@@ -200,7 +198,7 @@ function Footer() {
                 return null;
               })}
             </div>
-            <div className="flex-1">
+            <div className="flex-1  md:flex-[50%] 2xl:flex-[25%]">
               {Object.values(footerData).map((section, index) => {
                 if (section.title === "Event Decor") {
                   return (
@@ -227,41 +225,70 @@ function Footer() {
               })}
             </div>
           </div>
-          <div className="flex flex-col md:flex-row 3xl:flex-row gap-[20px] pb-[40px] md:pb-[75px]">
+          <div className="flex flex-col md:flex-row 3xl:flex-row gap-[20px] pb-[40px] md:pb-[50px] 3xl:pb-[75px]">
             <span className="block pr-[32px] text-20 leading-[22px]">
               Follow us
             </span>
             <ul className="flex gap-[50px]">
               <li>
-                <a href="#" target="_blank" className="hover:opacity-50 transition-all">
+                <a
+                  href="#"
+                  target="_blank"
+                  className="hover:opacity-50 transition-all"
+                >
                   <img src={Assets.instagram} alt="insta-icon" height={20.8} />
                 </a>
               </li>
               <li>
-                <a href="#" target="_blank" className="hover:opacity-50 transition-all">
-                  <img src={Assets.facebook} alt="fb" height={20.8}/>
+                <a
+                  href="#"
+                  target="_blank"
+                  className="hover:opacity-50 transition-all"
+                >
+                  <img src={Assets.facebook} alt="fb" height={20.8} />
                 </a>
               </li>
               <li>
-                <a href="#" target="_blank" className="hover:opacity-50 transition-all">
-                  <img src={Assets.pintrest} alt="pintrest" height={20.8}/>
+                <a
+                  href="#"
+                  target="_blank"
+                  className="hover:opacity-50 transition-all"
+                >
+                  <img src={Assets.pintrest} alt="pintrest" height={20.8} />
                 </a>
               </li>
               <li>
-                <a href="#" target="_blank" className="hover:opacity-50 transition-all">
-                  <img src={Assets.youtube} alt="youtube" height={20.8}/>
+                <a
+                  href="#"
+                  target="_blank"
+                  className="hover:opacity-50 transition-all"
+                >
+                  <img src={Assets.youtube} alt="youtube" height={20.8} />
                 </a>
               </li>
             </ul>
           </div>
-          <div className="flex flex-col md:flex-row 3xl:flex-row gap-[30px] md:gap-0 justify-between">
-            <div className="flex flex-col md:flex-row  gap-[30px]">
-              <span className="text-18 leading-[22px] text-[#707070] font-normal">Copyright © 2024 Symphony Events. All Rights Reserved</span>
-              <a href="#" className="pl-0 md:pl-[20px] text-18 leading-[22px] text-[#707070] font-normal hover:text-white transition-all">privacy policy</a>
+          <div className="flex flex-col lg:flex-row md:gap-10 3xl:flex-row gap-[30px]  justify-between">
+            <div className="flex flex-col md:flex-row  gap-[30px] md:justify-between">
+              <span className="text-18 leading-[22px] text-[#707070] font-normal">
+                Copyright © 2024 Symphony Events. All Rights Reserved
+              </span>
+              <a
+                href="#"
+                className="pl-0 md:pl-[20px] text-18 leading-[22px] text-[#707070] font-normal hover:text-white transition-all"
+              >
+                privacy policy
+              </a>
             </div>
             <div>
               <span className="text-18 leading-[22px] text-[#707070] font-normal">
-                Designed by: <a href="https://webandcrafts.com/" className="text-18 leading-[22px] text-[#707070] font-normal hover:text-white transition-all">Webandcrafts</a>
+                Designed by:{" "}
+                <a
+                  href="https://webandcrafts.com/"
+                  className="text-18 leading-[22px] text-[#707070] font-normal hover:text-white transition-all"
+                >
+                  Webandcrafts
+                </a>
               </span>
             </div>
           </div>

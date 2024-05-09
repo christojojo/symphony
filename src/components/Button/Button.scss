@@ -1,50 +1,39 @@
-
 .btn {
   @apply bg-white
-       border;
+       border-black;
   &:hover {
     @apply bg-gray-200;
   }
-  &:active {
-    @apply bg-gray-300;
-  }
-  &:disabled {
-    @apply text-gray-400 pointer-events-none select-none;
-  }
-  // &.md {
-  //   @apply px-lg py-md ;
-  // }
-  // &.lg {
-  //   @apply px-3xl
-  //       py-lg h-10;
-  // }
 }
 
-.btn-default {
-  @apply text-black
-      bg-white
-}
 
-  .btn-primary {
-    @apply  text-[#D98366];
-    &:hover {
-      @apply bg-[#d98366af];
+.btn-primary {
+  @apply bg-primary
+  border-primary
+     text-white;
+
+     &:hover{
+      @apply bg-primaryHover
+      border-primaryHover
+     }
+}
+.btn-secondary {
+  @apply bg-white
+       text-black;
+       &:hover{
+        @apply text-primary
+        border-primary
+        bg-transparent
+       }
+}
+.btn-tertiary {
+  @apply bg-ourServices
+    border-black
+    text-black;
+    &:hover{
+      @apply 
+      bg-primary
+      border-primary  
+      text-white;
     }
-    &:active {
-      @apply bg-[#db886c];
-    }
-    &:disabled {
-      @apply text-white bg-[#b46c53] pointer-events-none select-none;
-    }
-    // &.sm {
-    //   @apply px-xl
-    //       py-xs h-[30px];
-    // }
-    // &.md {
-    //   @apply px-3xl py-md h-9;
-    // }
-    // &.lg {
-    //   @apply px-3xl
-    //       py-lg h-10;
-    // }
-  }
+}

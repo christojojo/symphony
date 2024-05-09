@@ -1,20 +1,39 @@
-import React from 'react'
-import './App.css'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import Banner from './components/Banner/Banner'
-import EventDesign from './components/Event-Design/EventDesign'
-import GetInTouch from './components/get-in-touch/GetInTouch'
+import React from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Banner from "./components/Banner/Banner";
+import EventDesign from "./components/EventDesign/EventDesign";
+import GetInTouch from "./components/GetInTouch/GetInTouch";
+import SocialMedia from "./components/SocialMedia/SocialMedia";
+import Blogs from "./components/Blogs/Blogs";
+import Honours from "./components/Honours/Honours";
+import WeddingDecorations from "./components/WeddingDecorations/WeddingDecorations";
+import WeddingPlanning from "./components/WeddingPlanning/WeddingPlanning";
+import EventPlanning from "./components/EventPlanning/EventPlanning";
+import OurHightlights from "./components/OurHighlights/OurHightlights";
+import Testimonials from "./components/Testimonials/Testimonials";
+import OurWorks from "./components/OurWorks/OurWorks";
 
 function App() {
   return (
     <>
-     <EventDesign></EventDesign>
-     <GetInTouch></GetInTouch>
-     <Footer></Footer>
-
+      {/* <Header></Header>
+      <Banner></Banner>
+      <EventDesign></EventDesign>
+      <WeddingDecorations></WeddingDecorations>
+      <WeddingPlanning></WeddingPlanning>
+      <EventPlanning></EventPlanning>
+      <OurWorks></OurWorks>
+      <OurHightlights></OurHightlights>
+      <Testimonials></Testimonials> */}
+      <Honours></Honours>
+      <Blogs></Blogs>
+      <SocialMedia></SocialMedia>
+      <GetInTouch></GetInTouch>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

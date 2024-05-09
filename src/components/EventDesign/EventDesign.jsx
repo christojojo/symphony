@@ -31,7 +31,7 @@ function EventDesign() {
             opportunity to unite families, define legacies, and what better reason
             to dust off the vintage champagne?
           </p>
-          <Button>Enquire Now</Button>
+          <Button variant='primary'>Enquire Now</Button>
         </div>
       </div>
     </div>

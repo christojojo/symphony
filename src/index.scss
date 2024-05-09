@@ -12,6 +12,7 @@ $base-size: 16;
   // font-size
   --text-18: #{size(18)};
   --text-20: #{size(20)};
+  --text-22: #{size(22)};
   --text-23: #{size(23)};
   --text-25: #{size(25)};
   --text-26: #{size(26)};
@@ -32,28 +33,24 @@ $base-size: 16;
   --space-md: #{size(15)};
   --space-lg: #{size(30)};
 
-
-  //new spacing variables
-  --n-space-2xs: #{size(2)};
-  --n-space-xs: #{size(4)};
-  --n-space-sm: #{size(6)};
-  --n-space-md: #{size(8)};
-  --n-space-lg: #{size(10)};
-  --n-space-xl: #{size(12)};
-  --n-space-2xl: #{size(14)};
-  --n-space-3xl: #{size(16)};
-  --n-space-4xl: #{size(20)};
-  --n-space-5xl: #{size(24)};
-
-  --bg-enquiry-form: #F8F8F8;
-
   // border color
-  --form-border: #B2B2B2;
+  --form-border: #b2b2b2;
+
+  // bg-color
+  --primary: #d98366;
+  --primary-hover: #e8987d;
+  --secondary-hover: #ffffffea;
+  --bg-grey: #f8f8f8;
+  --ourServices-bg: #f7f1ec;
+  --bg-enquiry-form: #f8f8f8;
+
+  // text color
+  --ourSection-color: #2d1615;
 }
 .container {
   @apply sm:max-w-[575px] md:max-w-[768px] lg:max-w-[991px] xl:max-w-[1024px] 2xl:max-w-[1280px] 3xl:max-w-[1366px];
 }
-body{
+body {
   position: relative;
   font-family: "Forum", serif;
 }

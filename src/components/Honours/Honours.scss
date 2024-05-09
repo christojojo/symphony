@@ -1,0 +1,34 @@
+.honours{
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .swiper-container {
+    position: relative; /* Allows positioning of child elements */
+  }
+  
+  .swiper-pagination {
+    position: absolute;
+    bottom: -30px; /* Moves pagination below the Swiper component */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the pagination */
+    text-align: center; /* Ensures bullets are centered */
+    z-index: 10; /* Keep pagination above other elements */
+  }
+  
+  .swiper-pagination-bullet {
+    background: #999; /* Default bullet color */
+    opacity: 0.5; /* Makes bullets semi-transparent */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #000; /* Color for the active bullet */
+    opacity: 1; /* Full opacity for the active bullet */
+  }
+  

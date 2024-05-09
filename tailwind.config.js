@@ -1,29 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 
 const textColor = {
-  // black: "var(--text-black)",
-  // label: "var(--label-color)",
-  // placeholder: "var(--placeholder-color)",
+ ourSection: "var(--ourSection-color)"
 };
 
 const backgroundColor = {
   // white: "var(--white)",
   // gray: "var(--bg-gray)",
-  enquiryForm: "var(--bg-enquiry-form)"
+  enquiryForm: "var(--bg-enquiry-form)",
+  grey: "var(--bg-grey)",
+  ourServices: "var(--ourServices-bg)",
+  primary: "var(--primary)",
+  primaryHover: "var(--primary-hover)",
+  secondaryHover: "var(--secondary-hover)",
+
 };
 const borderColor = {
   gray: "var(--border-color)",
-  formBorder: "var(--form-border)"
+  formBorder: "var(--form-border)",
 };
 
-const color = {
+const colors = {
   primary: "var(--primary)",
+  primaryHover: "var(--primary-hover)",
+
 };
 
 const fontSize = {
   base: "1rem",
   18: ["var(--text-18)"],
   20: ["var(--text-20)"],
+  22: ["var(--text-22)"],
   23: ["var(--text-23)"],
   25: ["var(--text-25)"],
   26: ["var(--text-26)"],
@@ -62,7 +69,7 @@ export default {
       md: "768px",
       lg: "991px",
       xl: "1024px",
-      "2xl": "1400px",
+      "2xl": "1440px",
       "3xl": "1920px"
     },
     container: {
@@ -74,6 +81,8 @@ export default {
     extend: {
       backgroundColor,
       borderColor,
+      textColor,
+      colors,
       height: {
         "banner-height": "calc(100vh - 80px)",
       },
