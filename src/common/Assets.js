@@ -21,6 +21,7 @@ const instaIcon = '/images/instaIcon.svg';
 const quotesImg = '/images/quotes-img.png';
 const ourworks1 = '/images/ourworks1.png';
 const getintouch = '/images/getInTouch.png';
+const menuIcon = 'images/menu-icon.png';
 
 const Assets = {
     logo,
@@ -45,7 +46,8 @@ const Assets = {
     instaIcon,
     quotesImg,
     ourworks1,
-    getintouch
+    getintouch,
+    menuIcon
 
 }
 

@@ -18,20 +18,20 @@ import OurWorks from "./components/OurWorks/OurWorks";
 function App() {
   return (
     <>
-      {/* <Header></Header>
-      <Banner></Banner>
+      <Header></Header>
+      {/* <Banner></Banner>
       <EventDesign></EventDesign>
       <WeddingDecorations></WeddingDecorations>
       <WeddingPlanning></WeddingPlanning>
       <EventPlanning></EventPlanning>
       <OurWorks></OurWorks>
       <OurHightlights></OurHightlights>
-      <Testimonials></Testimonials> */}
+      <Testimonials></Testimonials>
       <Honours></Honours>
       <Blogs></Blogs>
       <SocialMedia></SocialMedia>
       <GetInTouch></GetInTouch>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </>
   );
 }

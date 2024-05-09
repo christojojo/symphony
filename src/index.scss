@@ -10,6 +10,7 @@ $base-size: 16;
 
 :root {
   // font-size
+  --text-16: #{size(16)};
   --text-18: #{size(18)};
   --text-20: #{size(20)};
   --text-22: #{size(22)};

@@ -37,11 +37,11 @@ const Blogs = () => {
             },
             // When the viewport is at least 768 pixels wide
             768: {
+              slidesPerView: 2.5,
+            },
+            1024: {
               slidesPerView: 3,
             },
-            // 1024: {
-            //   slidesPerView: 3,
-            // },
           }}
         >
           <SwiperSlide>
@@ -78,7 +78,7 @@ const Blogs = () => {
               <div className="w-full">
                 <figure className="relative pb-[70.68%] overflow-hidden">
                   <img
-                    src={Assets.sliderImg1}
+                    src={Assets.sliderImg2}
                     alt="sliderimg"
                     className="transition-all duration-500 ease-in-out group-hover:scale-125"
                   />
@@ -88,7 +88,7 @@ const Blogs = () => {
                 January 18, 2024
               </span>
               <div className="text-25 md:text-28 font-Silk md:font-Cormorant leading-[35px] font-normal min-h-[70px]">
-                Spring Groom Wedding Style Inspiration…
+              Real Wedding: Mimi & Kelvin
               </div>
               <div className="mt-[38px]">
                 <Button
@@ -107,7 +107,7 @@ const Blogs = () => {
               <div className=" w-full">
                 <figure className="relative pb-[70.68%] overflow-hidden">
                   <img
-                    src={Assets.sliderImg1}
+                    src={Assets.sliderImg3}
                     alt="sliderimg"
                     className="transition-all duration-500 ease-in-out group-hover:scale-125"
                   />
@@ -117,7 +117,7 @@ const Blogs = () => {
                 January 18, 2024
               </span>
               <div className="text-25 md:text-28 font-Silk md:font-Cormorant leading-[35px] font-normal min-h-[70px]">
-                Spring Groom Wedding Style Inspiration…
+              Did you have any special performances or entertainment?
               </div>
               <div className="mt-[38px]">
                 <Button

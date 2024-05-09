@@ -1,12 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination,Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
 import Assets from "../../common/Assets";
 import Button from "../Button/Button";
 
 const Testimonials = () => {
+
+  
   return (
     <div className="bg-grey py-[150px] font-Cormorant">
       <div className="container">
@@ -57,8 +59,8 @@ const Testimonials = () => {
             <div className="swiper-container">
               <Swiper
                 pagination={true}
-                modules={[Pagination,Autoplay]}
-                className="testimonial-swiper-2 pb-[124px]"    
+                modules={[Pagination, Autoplay]}
+                className="testimonial-swiper-2 pb-[124px]"
                 autoplay={{
                   delay: 3000,
                   disableOnInteraction: false,

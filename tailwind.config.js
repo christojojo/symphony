@@ -28,6 +28,7 @@ const colors = {
 
 const fontSize = {
   base: "1rem",
+  16: ["var(--text-16)"],
   18: ["var(--text-18)"],
   20: ["var(--text-20)"],
   22: ["var(--text-22)"],

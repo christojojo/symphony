@@ -2,7 +2,7 @@ import React from "react";
 import Assets from "../../common/Assets";
 function Banner() {
   return (
-    <section className="relative h-banner-height mt-20">
+    <section className="relative h-banner-height mt-[66px] lg:mt-20">
         <video
         className="absolute inset-0 w-full h-full object-cover"
         src="https://dev.uiwac.webc.in/juniors-2023/christo/lession1/symphony/images/bannnervideo.mp4"
