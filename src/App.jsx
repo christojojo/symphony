@@ -19,11 +19,11 @@ function App() {
   return (
     <>
       <Header></Header>
-      {/* <Banner></Banner>
+      <Banner></Banner>
       <EventDesign></EventDesign>
-      <WeddingDecorations></WeddingDecorations>
+      {/* <WeddingDecorations></WeddingDecorations>
       <WeddingPlanning></WeddingPlanning>
-      <EventPlanning></EventPlanning>
+      <EventPlanning></EventPlanning> */}
       <OurWorks></OurWorks>
       <OurHightlights></OurHightlights>
       <Testimonials></Testimonials>
@@ -31,7 +31,7 @@ function App() {
       <Blogs></Blogs>
       <SocialMedia></SocialMedia>
       <GetInTouch></GetInTouch>
-      <Footer></Footer> */}
+      <Footer></Footer>
     </>
   );
 }
