@@ -22,6 +22,14 @@ const quotesImg = '/images/quotes-img.png';
 const ourworks1 = '/images/ourworks1.png';
 const getintouch = '/images/getInTouch.png';
 const menuIcon = 'images/menu-icon.png';
+const eventDesignimg1 = 'images/image1.png';
+const eventDesignimg2 = 'images/image2.png';
+const eventDesignimg3 = 'images/image3.png';
+const eventDesignimg4 = 'images/image4.png';
+const bnrvideo2 = 'images/bnr2.mp4';
+const ovalImg = 'images/oval-img.png';
+
+
 
 const Assets = {
     logo,
@@ -47,7 +55,13 @@ const Assets = {
     quotesImg,
     ourworks1,
     getintouch,
-    menuIcon
+    menuIcon,
+    eventDesignimg1,
+    eventDesignimg2,
+    eventDesignimg3,
+    eventDesignimg4,
+    bnrvideo2,
+    ovalImg
 
 }
 

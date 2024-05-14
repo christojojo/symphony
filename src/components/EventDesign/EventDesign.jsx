@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 
 function EventDesign() {
   return (
-    <div className="py-[60px] 3xl:py-[110px] font-forum bg-white">
+    <div className="py-[60px] md:py-[110px] 3xl:py-[110px] font-forum bg-white">
       <div className="container mx-auto">
         <div className="flex flex-col justify-center items-center">
           <div className="max-w-[225px] md:max-w-[383px] 3xl:max-w-[383px] w-full mx-auto pb-[37px] md:pb-[109px] 3xl:pb-[109px]">
@@ -17,13 +17,37 @@ function EventDesign() {
                 className='absolute w-full h-full top-0 left-0 object-cover'
               />
             </figure>
+            {/* <div className='absolute top-0 left-0 w-full'>
+            <div className='max-w-[230px]'>
+              <figure className='relative pb-[114.34%]'>
+                <img src={Assets.eventDesignimg1} alt="#" className='absolute top-0 left-0 object-contain'/>
+              </figure>
+            </div>
+            <div className='max-w-[230px]'>
+              <figure className='relative pb-[114.34%]'>
+                <img src={Assets.eventDesignimg2} alt="#" className='absolute top-0 left-0 object-contain'/>
+              </figure>
+            </div>
+            <div className='max-w-[230px]'>
+              <figure className='relative pb-[114.34%]'>
+                <img src={Assets.eventDesignimg3} alt="#" className='absolute top-0 left-0 object-contain'/>
+              </figure>
+            </div>
+            <div className='max-w-[230px]'>
+              <figure className='relative pb-[114.34%]'>
+                <img src={Assets.eventDesignimg4} alt="#" className='absolute top-0 left-0 object-contain'/>
+              </figure>
+            </div>
+            </div> */}
+          
           </div>
           <div className='flex flex-col md:flex-col-reverse 3xl:flex-col-reverse'>
-          <h2 className="text-[35px] md:text-h2 3xl:text-h2 font-Silk md:font-Cormorant 3xl:font-Cormorant font-extralight md:font-normal 3xl:font-normal leading-[43px] md:leading-[87px] 3xl:leading-[87px] max-w-[474px] text-center pb-[37px] md:pb-[60px] 3xl:pb-[60px]">
+          <h2 className="text-[35px] uppercase md:text-h4 xl:text-h4 3xl:text-h2 font-Silk md:font-Cormorant 3xl:font-Cormorant font-extralight md:font-normal 3xl:font-normal 
+          leading-[43px] md:leading-[87px] 3xl:leading-[87px] max-w-[474px] md:max-w-[710px] text-center pb-[37px] md:pb-[60px] 3xl:pb-[60px]">
             Event Design For the Romance
           </h2>
           <div className="text-18 leading-[19px] pb-[50px] md:pb-[30px] 3xl:pb-[30px] text-center">
-            Let’s Celebrate
+            LET`S CELEBRATE
           </div>
           </div>          
           <p className="text-20 md:text-[23px] 3xl:text-[23px] leading-[30px] md:leading-[35px] 3xl:leading-[35px] pb-[40px] md:pb-[66px] 3xl:pb-[66px] max-w-[685px] text-center">
@@ -31,7 +55,7 @@ function EventDesign() {
             opportunity to unite families, define legacies, and what better reason
             to dust off the vintage champagne?
           </p>
-          <Button variant='primary'>Enquire Now</Button>
+          <Button variant='primary' classNames={'w-full md:max-w-[170px]'}>Enquire Now</Button>
         </div>
       </div>
     </div>

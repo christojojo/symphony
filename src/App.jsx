@@ -14,6 +14,7 @@ import EventPlanning from "./components/EventPlanning/EventPlanning";
 import OurHightlights from "./components/OurHighlights/OurHightlights";
 import Testimonials from "./components/Testimonials/Testimonials";
 import OurWorks from "./components/OurWorks/OurWorks";
+import OurServices from "./components/OurServices/OurServices";
 
 function App() {
   return (
@@ -21,12 +22,10 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <EventDesign></EventDesign>
-      {/* <WeddingDecorations></WeddingDecorations>
-      <WeddingPlanning></WeddingPlanning>
-      <EventPlanning></EventPlanning> */}
+      <OurServices></OurServices>
       <OurWorks></OurWorks>
       <OurHightlights></OurHightlights>
-      <Testimonials></Testimonials>
+      {/* <Testimonials></Testimonials> */}
       <Honours></Honours>
       <Blogs></Blogs>
       <SocialMedia></SocialMedia>

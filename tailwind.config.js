@@ -30,6 +30,7 @@ const fontSize = {
   base: "1rem",
   16: ["var(--text-16)"],
   18: ["var(--text-18)"],
+  19: ["var(--text-19)"],
   20: ["var(--text-20)"],
   22: ["var(--text-22)"],
   23: ["var(--text-23)"],
@@ -40,6 +41,8 @@ const fontSize = {
   33: ["var(--text-33)"],
   35: ["var(--text-35)"],
   40: ["var(--text-40)"],
+  45: ["var(--text-45)"],
+  50: ["var(--text-50)"],
   60: ["var(--text-60)"],
   80: ["var(--text-80)"],
   h1: ["var(--text-h1)"],
@@ -76,6 +79,7 @@ export default {
     container: {
       center: true,
       padding: '20px',
+      margin: '0',
     },
     fontSize,
 

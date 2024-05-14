@@ -28,7 +28,7 @@ function Header() {
           </a>
         </div>
         <div className="flex justify-center items-center">
-          <ul className="flex gap-[40px] text-18">
+          <ul className="flex gap-[20px] 2xl:gap-[40px] text-18 ">
             {navbarLi.map((item, index) => (
               <li key={index} className="flex items-center ">
                 <a
@@ -40,26 +40,26 @@ function Header() {
               </li>
             ))}
           </ul>
-          <ul className="flex justify-center items-center gap-[40px] text-18 pl-[105px] ">
+          <ul className=" hidden 2xl:flex justify-center items-center gap-[40px] text-18 pl-[105px]">
             <li>
-              <a href="#">store</a>
+              <a href="#" className="hover:text-primaryHover transition-all">store</a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" className="hover:text-primaryHover transition-all">
                 <img src={Assets.userIcon} alt="icon" width={17} height={19}/>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" className="hover:text-primaryHover transition-all">
                 <img src={Assets.storeIcon} alt="icon" />
               </a>
             </li>
           </ul>
-          <div className="flex justify-end xl:ml-[20px] 3xl:ml-[100px]">
+          <div className="flex justify-end ml-[20px] 2xl:ml-[100px] 3xl:ml-[100px]">
             <Button
               children={"enquire now"}
               variant={"secondary"}
-              classNames={"py-[11px] px-[32px] h-[45px]"}
+              classNames={"py-[11px] px-[32px] h-[45px] "}
             ></Button>
           </div>
         </div>
@@ -91,7 +91,7 @@ function Header() {
                   onClick={toggleMenu}
                 >
                   {isOpen ? (
-                    <span class="material-symbols-outlined text-6 font-semibold">
+                    <span className="material-symbols-outlined text-6 font-semibold">
                       close
                     </span>
                   ) : (
