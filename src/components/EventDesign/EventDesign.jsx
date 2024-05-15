@@ -9,10 +9,12 @@ function EventDesign() {
 
   useGSAP(() => {
     gsap.to(".move-left1", { x: -300, delay: 1 });
-    gsap.to(".move-left2", { x: -500, delay: 1 });
-    gsap.to(".move-right1", { x: 500, delay: 1 });
+    gsap.to(".move-left2", { x: -430, delay: 1 });
+    gsap.to(".move-right1", { x: 430, delay: 1 });
     gsap.to(".move-right2", { x: 300, delay: 1 });
   }, []);
+
+
 
   return (
     <div className="py-[60px] md:py-[110px] 3xl:py-[110px] font-forum bg-white">
@@ -29,7 +31,7 @@ function EventDesign() {
 
             <div className="animation-images absolute bottom-0 left-0 w-full">
               <div className="relative">
-                <div className="move-left1 absolute bottom-0 left-0">
+                <div className="move-left1 absolute bottom-[50px] left-0 z-10">
                   <figure>
                     <img src={Assets.eventDesignimg2} alt="#" />
                   </figure>
@@ -47,7 +49,7 @@ function EventDesign() {
                   </figure>
                 </div>
 
-                <div className="move-right2 absolute bottom-0 right-0">
+                <div className="move-right2 absolute bottom-[50px] right-0 z-10">
                   <figure>
                     <img src={Assets.eventDesignimg1} alt="#" />
                   </figure>
