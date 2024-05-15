@@ -13,6 +13,7 @@ const backgroundColor = {
   primary: "var(--primary)",
   primaryHover: "var(--primary-hover)",
   secondaryHover: "var(--secondary-hover)",
+  highlightsHover: "var(--highlights-hover)",
 
 };
 const borderColor = {

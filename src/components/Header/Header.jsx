@@ -18,12 +18,12 @@ function Header() {
   };
 
   return (
-    <header className="bg-white fixed top-0 left-0 z-50 w-full">
+    <header className="bg-white fixed top-0 left-0 z-[999] w-full">
       <div className="max-w-[1639px] mx-auto py-[18px] px-[20px] h-[80px] hidden xl:flex justify-between items-center font-forum ">
         <div className="logo flex justify-left items-center">
           <a href="https://symphonyevents.com.au/">
             <figure>
-              <img src={Assets.logo} alt="" />
+              <img src={Assets.logo} alt="logo" />
             </figure>
           </a>
         </div>

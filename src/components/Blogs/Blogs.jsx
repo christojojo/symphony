@@ -51,7 +51,7 @@ const Blogs = () => {
                   <img
                     src={Assets.sliderImg1}
                     alt="sliderimg"
-                    className="transition-all duration-500 ease-in-out group-hover:scale-125"
+                    className="transition-all duration-700 ease-in-out group-hover:scale-125"
                   />
                 </figure>
               </div>
@@ -80,7 +80,7 @@ const Blogs = () => {
                   <img
                     src={Assets.sliderImg2}
                     alt="sliderimg"
-                    className="transition-all duration-500 ease-in-out group-hover:scale-125"
+                    className="transition-all duration-700 ease-in-out group-hover:scale-125"
                   />
                 </figure>
               </div>
@@ -109,7 +109,7 @@ const Blogs = () => {
                   <img
                     src={Assets.sliderImg3}
                     alt="sliderimg"
-                    className="transition-all duration-500 ease-in-out group-hover:scale-125"
+                    className="transition-all duration-700 ease-in-out group-hover:scale-125"
                   />
                 </figure>
               </div>

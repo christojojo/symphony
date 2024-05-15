@@ -29,8 +29,6 @@ const eventDesignimg4 = 'images/image4.png';
 const bnrvideo2 = 'images/bnr2.mp4';
 const ovalImg = 'images/oval-img.png';
 
-
-
 const Assets = {
     logo,
     userIcon,

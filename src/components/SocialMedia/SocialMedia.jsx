@@ -4,14 +4,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Assets from "../../common/Assets";
-import './socialmedia.scss'
+import './socialmedia.scss';
 
 const SocialMedia = () => {
   return (
     <div className="socialmedia py-[60px] 3xl:py-[130px]">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-center md:justify-between pb-[50px]">
-          <h5 className="font-Silk md:font-Cormorant font-extralight md:font-normal 3xl:font-normal text-40 md:text-h5  leading-[68px] max-w-[475px] text-center md:text-left pb-[15px] md:pb-0">
+          <h5 className="font-Silk md:font-Cormorant font-extralight md:font-normal 3xl:font-normal text-40 md:text-50 xl:text-h5  leading-[50px] md:leading-[55px] xl:leading-[68px] 3xl:leading-[68px] lg:max-w-full xl:max-w-[475px] 3xl:max-w-[475px] text-center md:text-left pb-[15px] md:pb-0">
             FOLLOW LET THE MAGIC BEGIN
           </h5>
           <div className="flex justify-center items-center">
