@@ -28,6 +28,7 @@ const eventDesignimg3 = 'images/image3.png';
 const eventDesignimg4 = 'images/image4.png';
 const bnrvideo2 = 'images/bnr2.mp4';
 const ovalImg = 'images/oval-img.png';
+const videloader = 'images/videoloader.png';
 
 const Assets = {
     logo,
@@ -59,7 +60,8 @@ const Assets = {
     eventDesignimg3,
     eventDesignimg4,
     bnrvideo2,
-    ovalImg
+    ovalImg,
+    videloader
 
 }
 

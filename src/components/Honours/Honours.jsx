@@ -1,3 +1,4 @@
+
 import React from "react";
 import Button from "../Button/Button";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,6 +9,39 @@ import 'swiper/css/pagination';
 
 import Assets from "../../common/Assets";
 import '../Honours/Honours.scss'
+
+const honorsData = [
+  {
+    id: 1,
+    image: Assets.honour1,
+    title: "ABIA Wedding Stylist Winner 2023"
+  },
+  {
+    id: 2,
+    image: Assets.honour2,
+    title: "Another Award Title"
+  },
+  {
+    id: 3,
+    image: Assets.honour2,
+    title: "ABIA Wedding Stylist Winner 2023"
+  },  
+  {
+    id: 4,
+    image: Assets.honour1,
+    title: "Another Award Title"
+  },
+  {
+    id: 5,
+    image: Assets.honour2,
+    title: "ABIA Wedding Stylist Winner 2023"
+  },
+  {
+    id: 6,
+    image: Assets.honour2,
+    title: "Another Award Title"
+  },
+];
 
 const Honours = () => {
   return (
@@ -22,7 +56,6 @@ const Honours = () => {
           </div>
         </div>
 
-        <div>
         <Swiper 
           slidesPerView={1}
           spaceBetween={0}
@@ -32,86 +65,26 @@ const Honours = () => {
           modules={[Pagination]}
           className="honour-swiper pb-0 md:pb-[86px]"
           breakpoints={{
-            // When the viewport is at least 320 pixels wide
-            320: {
-              slidesPerView: 1.2,
-            },
-            640: {
-              slidesPerView: 2,
-            },
-            // When the viewport is at least 768 pixels wide
-            768: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 4,
-            }
-            
+            320: { slidesPerView: 1.2 },
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 4 }
           }}
         >
-          <SwiperSlide>
-            <div className="px-[35px] pt-[35px] pb-[23px] md:p-10 3xl:p-10 border">
+          {honorsData.map(honor => (
+            <SwiperSlide key={honor.id}>
+              <div className="px-[35px] pt-[35px] pb-[23px] md:p-10 3xl:p-10 border">
                 <div className="max-w-[149px] mx-auto mb-[40px] 3xl:mb-10">
-                    <figure className="relative pb-[98.58%]">
-                        <img src={Assets.honour1} alt="" />
-                    </figure>
+                  <figure className="relative pb-[98.58%]">
+                    <img src={honor.image} alt="" />
+                  </figure>
                 </div>
-                <div className="text-20 md:text-22 leading-[28px] text-center max-w-[226px] mx-auto uppercase">ABIA Wedding Stylist Winner 2023</div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="px-[35px] pt-[35px] pb-[23px] md:p-10 3xl:p-10 border">
-                <div className="max-w-[149px] mx-auto mb-[40px] 3xl:mb-10">
-                    <figure className="relative pb-[98.58%]">
-                        <img src={Assets.honour2} alt="" />
-                    </figure>
-                </div>
-                <div className="text-20 md:text-22 leading-[28px] text-center max-w-[226px] mx-auto uppercase">ABIA Wedding Stylist Winner 2023</div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="px-[35px] pt-[35px] pb-[23px] md:p-10 3xl:p-10 border">
-                <div className="max-w-[149px] mx-auto mb-[40px] 3xl:mb-10">
-                    <figure className="relative pb-[98.58%]">
-                        <img src={Assets.honour2} alt="" />
-                    </figure>
-                </div>
-                <div className="text-20 md:text-22 leading-[28px] text-center max-w-[226px] mx-auto uppercase">ABIA Wedding Stylist Winner 2023</div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="px-[35px] pt-[35px] pb-[23px] md:p-10 3xl:p-10 border">
-                <div className="max-w-[149px] mx-auto mb-[40px] 3xl:mb-10">
-                    <figure className="relative pb-[98.58%]">
-                        <img src={Assets.honour1} alt="" />
-                    </figure>
-                </div>
-                <div className="text-20 md:text-22 leading-[28px] text-center max-w-[226px] mx-auto uppercase">ABIA Wedding Stylist Winner 2023</div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="px-[35px] pt-[35px] pb-[23px] md:p-10 3xl:p-10 border">
-                <div className="max-w-[149px] mx-auto mb-[40px] 3xl:mb-10">
-                    <figure className="relative pb-[98.58%]">
-                        <img src={Assets.honour2} alt="" />
-                    </figure>
-                </div>
-                <div className="text-20 md:text-22 leading-[28px] text-center max-w-[226px] mx-auto uppercase">ABIA Wedding Stylist Winner 2023</div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="px-[35px] pt-[35px] pb-[23px] md:p-10 3xl:p-10 border">
-                <div className="max-w-[149px] mx-auto mb-[40px] 3xl:mb-10">
-                    <figure className="relative pb-[98.58%]">
-                        <img src={Assets.honour2} alt="" />
-                    </figure>
-                </div>
-                <div className="text-20 md:text-22 leading-[28px] text-center max-w-[226px] mx-auto uppercase">ABIA Wedding Stylist Winner 2023</div>
-            </div>
-          </SwiperSlide>
-         
+                <div className="text-20 md:text-22 leading-[28px] text-center max-w-[226px] mx-auto uppercase min-h-[56px]">{honor.title}</div>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
-        </div>
+
         <div className="mt-[50px] md:hidden">
           <Button variant="secondary" classNames={'w-full !text-18 !leading-[19px] h-[49px]'}>KNOW MORE</Button>
         </div>

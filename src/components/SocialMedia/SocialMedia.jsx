@@ -1,3 +1,6 @@
+
+
+
 import React from "react";
 import Button from "../Button/Button";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -5,6 +8,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Assets from "../../common/Assets";
 import './socialmedia.scss';
+
+const socialMediaData = [
+  { id: 1, image: Assets.sliderImg1 },
+  { id: 2, image: Assets.sliderImg2 },
+  { id: 3, image: Assets.sliderImg3 },
+  { id: 4, image: Assets.testimonials },
+  { id: 5, image: Assets.sliderImg1 },
+  { id: 6, image: Assets.sliderImg2 },
+  { id: 7, image: Assets.sliderImg3 },
+  { id: 8, image: Assets.testimonials },
+];
 
 const SocialMedia = () => {
   return (
@@ -36,63 +50,15 @@ const SocialMedia = () => {
             },
           }}
         >
-          <SwiperSlide>
-            <div className="max-w-[350px] w-full">
-              <figure className="relative pb-[100%]">
-                <img src={Assets.sliderImg1} alt=""/>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="max-w-[350px] w-full">
-              <figure className="relative pb-[100%]">
-                <img src={Assets.sliderImg2} alt=""/>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="max-w-[350px] w-full">
-              <figure className="relative pb-[100%]">
-                <img src={Assets.sliderImg3} alt=""/>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="max-w-[350px] w-full">
-              <figure className="relative pb-[100%]">
-                <img src={Assets.testimonials} alt=""/>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="max-w-[350px] w-full">
-              <figure className="relative pb-[100%]">
-                <img src={Assets.sliderImg1} alt=""/>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="max-w-[350px] w-full">
-              <figure className="relative pb-[100%]">
-                <img src={Assets.sliderImg2} alt=""/>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="max-w-[350px] w-full">
-              <figure className="relative pb-[100%]">
-                <img src={Assets.sliderImg3} alt=""/>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="max-w-[350px] w-full">
-              <figure className="relative pb-[100%]">
-                <img src={Assets.testimonials} alt=""/>
-              </figure>
-            </div>
-          </SwiperSlide>
-         
+          {socialMediaData.map((item) => (
+            <SwiperSlide key={item.id}>
+              <div className="max-w-[350px] w-full">
+                <figure className="relative pb-[100%]">
+                  <img src={item.image} alt=""/>
+                </figure>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
