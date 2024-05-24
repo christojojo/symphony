@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -8,13 +7,11 @@ function Banner() {
   const videosData = [
     {
       title: "TELLING THE STORY OF YOUR LOVE",
-      src:
-        "https://dev.uiwac.webc.in/juniors-2023/christo/lession1/symphony/images/bnr2.mp4",
+      src: "https://dev.uiwac.webc.in/juniors-2023/christo/lession1/symphony/images/bnr2.mp4",
     },
     {
       title: "TELLING THE STORY OF YOUR LOVE",
-      src:
-        "https://dev.uiwac.webc.in/juniors-2023/christo/lession1/symphony/images/bannervideo2.mp4",
+      src: "https://dev.uiwac.webc.in/juniors-2023/christo/lession1/symphony/images/bannervideo2.mp4",
     },
   ];
 
@@ -25,16 +22,14 @@ function Banner() {
   useEffect(() => {
     const updateProgress = () => {
       if (videoRefs.current && videoRefs.current[0].current) {
-        const currentProgress =
-          (videoRefs.current[0].current.currentTime /
-            videoRefs.current[0].current.duration) *
-          100;
+        const video = videoRefs.current[0].current;
+        const currentProgress = (video.currentTime / video.duration) * 100;
         setProgress(currentProgress);
         setShowProgressBar(currentProgress < 100);
       }
     };
 
-    const interval = setInterval(updateProgress, 10);
+    const interval = setInterval(updateProgress, 100);
 
     if (videoRefs.current && videoRefs.current[0].current) {
       videoRefs.current[0].current.addEventListener("timeupdate", updateProgress);
@@ -49,20 +44,20 @@ function Banner() {
   }, []);
 
   const handleVideoEnded = () => {
-    setShowProgressBar(true);
+    setShowProgressBar(false);
   };
 
   const VideoLoader = () => {
     return (
       <div
-        className={`loader bg-black opacity-60 text-white  max-w-[273px] w-full absolute bottom-[6.4%] right-[16%]  z-10 ${
-          !showProgressBar && ""
+        className={`loader bg-black opacity-60 text-white max-w-[273px] w-full absolute bottom-[6.4%] right-[16%] z-10 ${
+          showProgressBar ? '' : 'hidden'
         }`}
       >
         <div className="flex gap-[22px] py-[15px] px-[22px]">
           <div className="text-center pr-[22px] relative">
-            <div className=" after:content-[''] after:absolute after:top-0 after:right-0 after:w-[1px] after:h-full after:bg-white after:opacity-20">
-              <img src={Assets.videloader} alt="" />
+            <div className="after:content-[''] after:absolute after:top-0 after:right-0 after:w-[1px] after:h-full after:bg-white after:opacity-20">
+              <img src={Assets.videloader} alt="Loader" />
             </div>
           </div>
           <div className="flex items-center justify-center">
@@ -72,7 +67,7 @@ function Banner() {
           </div>
         </div>
         <span
-          className="h-[2px] bg-white block after:content-[''] after:h-[2px] after:absolute after:bottom-0 after:left-0 after:bg-white transition-width duration-500"
+          className="h-[2px] bg-white block relative"
           style={{ width: `${progress}%`, minWidth: "0%" }}
         ></span>
       </div>
@@ -80,11 +75,11 @@ function Banner() {
   };
 
   return (
-    <section className="relative h-banner-height mt-[66px] lg:mt-20">   
+    <section className="relative h-banner-height-responsive xl:h-banner-height mt-[66px] lg:mt-20">
       <Swiper spaceBetween={0} slidesPerView={1} className="h-full">
         {videosData.map((video, index) => (
           <SwiperSlide key={index} className="h-full">
-            <div className="relative h-full .container">
+            <div className="relative h-full">
               <video
                 ref={videoRefs.current[index]}
                 className="absolute inset-0 w-full h-full object-cover"

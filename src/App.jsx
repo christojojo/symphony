@@ -21,11 +21,11 @@ function App() {
     <>
       <Header></Header>
       <Banner></Banner>
-      <EventDesign></EventDesign>
-      <OurServices></OurServices>
-      <OurWorks></OurWorks>
-      <OurHightlights></OurHightlights>
-      {/* <Testimonials></Testimonials> */}
+      {/* <EventDesign></EventDesign> */}
+      {/* <OurServices></OurServices> */}
+      {/* <OurWorks></OurWorks> */}
+      {/* <OurHightlights></OurHightlights> */}
+      <Testimonials></Testimonials>
       <Honours></Honours>
       <Blogs></Blogs>
       <SocialMedia></SocialMedia>

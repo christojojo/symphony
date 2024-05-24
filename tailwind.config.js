@@ -91,6 +91,7 @@ export default {
       colors,
       height: {
         "banner-height": "calc(100vh - 80px)",
+        "banner-height-responsive": "calc(100vh - 66px)",
       },
     },
   },

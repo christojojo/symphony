@@ -1,11 +1,9 @@
-
-
 import React from "react";
 import WeddingDecorations from "../WeddingDecorations/WeddingDecorations";
 import WeddingPlanning from "../WeddingPlanning/WeddingPlanning";
 import EventPlanning from "../EventPlanning/EventPlanning";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar } from "swiper/modules";
+import { Pagination, Scrollbar } from "swiper/modules";
 import Button from "../Button/Button";
 
 const OurServices = () => {
@@ -58,10 +56,12 @@ const OurServices = () => {
             scrollbar={{
               hide: true,
             }}
-            modules={[Scrollbar]}
+            pagination={{
+              type: "fraction",
+            }}
+            modules={[Scrollbar, Pagination]}
             className="our-service"
           >
-            
             {servicesData.map((service, index) => (
               <SwiperSlide key={index}>
                 <h4 className="font-Silk text-40 font-extralight pb-[28px] leading-[50px]">
@@ -95,4 +95,3 @@ const OurServices = () => {
 };
 
 export default OurServices;
-

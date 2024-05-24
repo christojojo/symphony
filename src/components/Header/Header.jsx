@@ -18,7 +18,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-white fixed top-0 left-0 z-[999] w-full">
+    <header className="bg-white fixed top-0 left-0 z-[999] w-full shadow-md">
       <div className="max-w-[1639px] mx-auto py-[18px] px-[20px] h-[80px] hidden xl:flex justify-between items-center font-forum ">
         <div className="logo flex justify-left items-center">
           <a href="https://symphonyevents.com.au/">
@@ -30,10 +30,11 @@ function Header() {
         <div className="flex justify-center items-center">
           <ul className="flex gap-[20px] 2xl:gap-[40px] text-18 ">
             {navbarLi.map((item, index) => (
-              <li key={index} className="flex items-center ">
+              <li key={index} className="flex items-center relative">
                 <a
                   href="#"
-                  className="text-16 xl:text-18 hover:text-primary transition-all whitespace-nowrap"
+                  className="text-16 xl:text-18 transition-all ease-in-out duration-300 whitespace-nowrap pb-1
+                   after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primaryHover after:transition-all after:ease-in-out after:duration-500 hover:after:w-full"
                 >
                   {item}
                 </a>
@@ -41,16 +42,16 @@ function Header() {
             ))}
           </ul>
           <ul className=" hidden 2xl:flex justify-center items-center gap-[40px] text-18 pl-[105px]">
-            <li>
-              <a href="#" className="hover:text-primaryHover transition-all">store</a>
+            <li className="relative pb-1">
+              <a href="#" className="transition-all  after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primaryHover after:transition-all after:ease-in-out after:duration-500 hover:after:w-full">store</a>
             </li>
             <li>
-              <a href="#" className="hover:text-primaryHover transition-all">
+              <a href="#" className="transition-all">
                 <img src={Assets.userIcon} alt="icon" width={17} height={19}/>
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-primaryHover transition-all">
+              <a href="#" className="">
                 <img src={Assets.storeIcon} alt="icon" />
               </a>
             </li>
@@ -59,7 +60,7 @@ function Header() {
             <Button
               children={"enquire now"}
               variant={"secondary"}
-              classNames={"py-[11px] px-[32px] h-[45px] "}
+              classNames={"w-[175px] !h-[45px] "}
             ></Button>
           </div>
         </div>

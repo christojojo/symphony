@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
-import { Scrollbar } from "swiper/modules";
+import { Pagination, Scrollbar } from "swiper/modules";
 import Assets from "../../common/Assets";
 import Button from "../Button/Button";
 
@@ -145,7 +145,10 @@ const OurWorks = () => {
                 scrollbar={{
                   hide: true,
                 }}
-                modules={[Scrollbar]}
+                pagination={
+                 { type : 'fraction'}
+                }
+                modules={[Scrollbar,Pagination]}
                 className="mySwiper"
               >
                 <SwiperSlide>
