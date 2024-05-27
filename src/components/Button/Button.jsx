@@ -19,8 +19,8 @@ const Button = ({
         {...props}
       >
         {icon && (
-          <img src={icon} alt="instaIcon" className="mr-2.5" />
-          // <span className="mr-2.5 icon-wrap">{icon}</span>
+          // <img src={icon} alt="instaIcon" className="mr-2.5" />
+          <span className="mr-2.5 icon-wrap">{icon}</span>
         )}
         {children}
       </button>

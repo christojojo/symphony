@@ -2,9 +2,34 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
-import { Pagination, Scrollbar } from "swiper/modules";
+import { Pagination, Scrollbar ,Autoplay} from "swiper/modules";
 import Assets from "../../common/Assets";
 import Button from "../Button/Button";
+import "./OurWorks.scss";
+
+const data = [
+  {
+    image: Assets.ourworks1,
+    title: "Brenna & Fadell Wedding",
+    location: "Australian Botanic Garden",
+    description:
+      "Embark on a journey of love as Brenna and Fadell changed vows in their white wedding at the Australian Botanic Garden, Mount Annan.",
+  },
+  {
+    image: Assets.ourworks1,
+    title: "Brenna & Fadell Wedding",
+    location: "Australian Botanic Garden",
+    description:
+      "Embark on a journey of love as Brenna and Fadell changed vows in their white wedding at the Australian Botanic Garden, Mount Annan.",
+  },
+  {
+    image: Assets.ourworks1,
+    title: "Brenna & Fadell Wedding",
+    location: "Australian Botanic Garden",
+    description:
+      "Embark on a journey of love as Brenna and Fadell changed vows in their white wedding at the Australian Botanic Garden, Mount Annan.",
+  },
+];
 
 const OurWorks = () => {
   return (
@@ -20,118 +45,57 @@ const OurWorks = () => {
             </h3>
           </div>
           <div>
-            <Swiper className="mySwiper">
-              <SwiperSlide>
-                <div className="flex">
-                  <div className="w-[46%] pr-[20px] lg:pr-[40px] 3xl:pr-[65px]">
-                    <div className="max-w-[536px] w-full">
-                      <figure className="relative pb-[118.84%]">
-                        <img
-                          src={Assets.ourworks1}
-                          alt="img"
-                          className="absolute top-0 left-0 w-full h-full object-contain"
-                        />
-                      </figure>
+            <Swiper 
+            loop={true}
+            autoplay={{
+              duration: 5000,
+              disableOnInteraction: false,
+            }}
+            // autoplay={true}
+            slidesPerView={1.4} 
+            modules={[Autoplay]}            
+            className="mySwiper"            
+            >
+
+              {data.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <div className="wrap flex">
+                    <div className="img-section w-[46%] pr-[20px] lg:pr-[40px] 3xl:pr-[65px]">
+                      <div className="max-w-[536px] w-full">
+                        <figure className="relative pb-[118.84%]">
+                          <img
+                            src={item.image}
+                            alt="img"
+                            className="absolute top-0 left-0 w-full h-full object-contain"
+                          />
+                        </figure>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-center w-[54%] pl-[20px] lg:pl-[40px] 3xl:pl-[65px]">
-                    <div className="">
-                      <h4 className="text-33 font-Cormorant leading-[40px] pb-[39px] max-w-[346px]">
-                        Brenna & Fadell Wedding
-                        <span className="text-25">
-                          {" "}
-                          – Australian Botanic Garden
-                        </span>
-                      </h4>
-                      <p className="max-w-[448px] pb-[47px] text-20 leading-[30px]">
-                        Embark on a journey of love as Brenna and Fadell changed
-                        vows in their white wedding at the Australian Botanic is
-                        a Garden, Mount Annan.
-                      </p>
-                      <div className="flex gap-4">
-                        <Button variant="primary">More Detailes</Button>
-                        <Button variant="secondary">View All Works</Button>
+                    <div className="content flex items-center w-[54%] pl-[20px] lg:pl-[40px] 3xl:pl-[65px]">
+                      <div className="">
+                        <h4 className="text-33 font-Cormorant leading-[40px] pb-[39px] max-w-[346px]">
+                          {item.title}{" "}
+                          <span className="text-25">– {item.location}</span>
+                        </h4>
+                        <p className="max-w-[448px] pb-[47px] text-20 leading-[30px]">
+                          {item.description}
+                        </p>
+                        <div className="flex gap-4">
+                          <Button variant="primary">More Details</Button>
+                          <Button variant="secondary">View All Works</Button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex">
-                  <div className="w-[42%] pr-[65px]">
-                    <div className="max-w-[536px] w-full">
-                      <figure className="relative pb-[118.84%]">
-                        <img
-                          src={Assets.ourworks1}
-                          alt="img"
-                          className="absolute top-0 left-0 w-full h-full object-contain"
-                        />
-                      </figure>
-                    </div>
-                  </div>
-                  <div className="flex items-center w-[58%] pl-[65px]">
-                    <div className="">
-                      <h4 className="text-33 font-Cormorant leading-[40px] pb-[39px] max-w-[346px]">
-                        Brenna & Fadell Wedding
-                        <span className="text-25">
-                          {" "}
-                          – Australian Botanic Garden
-                        </span>
-                      </h4>
-                      <p className="max-w-[448px] pb-[47px] text-20 leading-[30px]">
-                        Embark on a journey of love as Brenna and Fadell changed
-                        vows in their white wedding at the Australian Botanic is
-                        a Garden, Mount Annan.
-                      </p>
-                      <div className="flex gap-4">
-                        <Button variant="primary">More Detailes</Button>
-                        <Button variant="secondary">View All Works</Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex">
-                  <div className="w-[42%] pr-[65px]">
-                    <div className="max-w-[536px] w-full">
-                      <figure className="relative pb-[118.84%]">
-                        <img
-                          src={Assets.ourworks1}
-                          alt="img"
-                          className="absolute top-0 left-0 w-full h-full object-contain"
-                        />
-                      </figure>
-                    </div>
-                  </div>
-                  <div className="flex items-center w-[58%] pl-[65px]">
-                    <div className="">
-                      <h4 className="text-33 font-Cormorant leading-[40px] pb-[39px] max-w-[346px]">
-                        Brenna & Fadell Wedding
-                        <span className="text-25">
-                          {" "}
-                          – Australian Botanic Garden
-                        </span>
-                      </h4>
-                      <p className="max-w-[448px] pb-[47px] text-20 leading-[30px]">
-                        Embark on a journey of love as Brenna and Fadell changed
-                        vows in their white wedding at the Australian Botanic is
-                        a Garden, Mount Annan.
-                      </p>
-                      <div className="flex gap-4">
-                        <Button variant="primary">More Detailes</Button>
-                        <Button variant="secondary">View All Works</Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
       </div>
+      
 
-      <div className="ourworks-responsive block md:hidden">
+         <div className="ourworks-responsive block md:hidden">
         <div className="container">
           <div className="py-[60px]">
             <div className="text-16 leading-[18px] pb-[30px] text-center">
@@ -270,7 +234,7 @@ const OurWorks = () => {
             />
           </figure>
         </div>
-      </div>
+      </div> 
     </>
   );
 };

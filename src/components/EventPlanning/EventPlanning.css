@@ -1,6 +1,12 @@
 .evnt-planing{
     width: 65%;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .evnt-planing {
+      width: 100%;
+    }
+  }
+  
 .evnt-planing li{
     position: relative;
     width: 100%;

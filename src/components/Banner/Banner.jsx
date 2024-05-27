@@ -9,10 +9,10 @@ function Banner() {
       title: "TELLING THE STORY OF YOUR LOVE",
       src: "https://dev.uiwac.webc.in/juniors-2023/christo/lession1/symphony/images/bnr2.mp4",
     },
-    {
-      title: "TELLING THE STORY OF YOUR LOVE",
-      src: "https://dev.uiwac.webc.in/juniors-2023/christo/lession1/symphony/images/bannervideo2.mp4",
-    },
+    // {
+    //   title: "TELLING THE STORY OF YOUR LOVE",
+    //   src: "https://dev.uiwac.webc.in/juniors-2023/christo/lession1/symphony/images/bannervideo2.mp4",
+    // },
   ];
 
   const videoRefs = useRef(videosData.map(() => React.createRef()));
@@ -23,13 +23,13 @@ function Banner() {
     const updateProgress = () => {
       if (videoRefs.current && videoRefs.current[0].current) {
         const video = videoRefs.current[0].current;
-        const currentProgress = (video.currentTime / video.duration) * 100;
+        const currentProgress = (video.currentTime / video.duration);
         setProgress(currentProgress);
-        setShowProgressBar(currentProgress < 100);
+        setShowProgressBar(currentProgress < 1);
       }
     };
 
-    const interval = setInterval(updateProgress, 100);
+    const interval = setInterval(updateProgress, 1);
 
     if (videoRefs.current && videoRefs.current[0].current) {
       videoRefs.current[0].current.addEventListener("timeupdate", updateProgress);
@@ -67,8 +67,8 @@ function Banner() {
           </div>
         </div>
         <span
-          className="h-[2px] bg-white block relative"
-          style={{ width: `${progress}%`, minWidth: "0%" }}
+          className="h-[2px] bg-white block relative origin-left ease-linear"
+          style={{ transform: `scaleX(${progress})`, minWidth: "0%" }}
         ></span>
       </div>
     );

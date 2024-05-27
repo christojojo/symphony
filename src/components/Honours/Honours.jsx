@@ -72,8 +72,8 @@ const Honours = () => {
           }}
         >
           {honorsData.map(honor => (
-            <SwiperSlide key={honor.id}>
-              <div className="px-[35px] pt-[35px] pb-[23px] md:p-10 3xl:p-10 border">
+            <SwiperSlide key={honor.id} className="h-auto">
+              <div className="px-[35px] pt-[35px] pb-[23px] md:p-10 3xl:p-10 border h-full">
                 <div className="max-w-[149px] mx-auto mb-[40px] 3xl:mb-10">
                   <figure className="relative pb-[98.58%]">
                     <img src={honor.image} alt="" />
