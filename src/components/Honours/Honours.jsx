@@ -86,7 +86,7 @@ const Honours = () => {
         </Swiper>
 
         <div className="mt-[50px] md:hidden">
-          <Button variant="secondary" classNames={'w-full !text-18 !leading-[19px] h-[49px]'}>KNOW MORE</Button>
+          <Button variant="secondary" classNames={'w-full !text-18 !leading-[19px] !h-[49px]'}>KNOW MORE</Button>
         </div>
       </div>
     </div>

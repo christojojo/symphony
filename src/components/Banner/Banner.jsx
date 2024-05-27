@@ -51,7 +51,7 @@ function Banner() {
     return (
       <div
         className={`loader bg-black opacity-60 text-white max-w-[273px] w-full absolute bottom-[6.4%] right-[16%] z-10 ${
-          showProgressBar ? '' : 'hidden'
+          showProgressBar ? '' : ''
         }`}
       >
         <div className="flex gap-[22px] py-[15px] px-[22px]">
@@ -68,7 +68,7 @@ function Banner() {
         </div>
         <span
           className="h-[2px] bg-white block relative origin-left ease-linear"
-          style={{ transform: `scaleX(${progress})`, minWidth: "0%" }}
+          style={{ transform: `scaleX(${progress})`, minWidth: "0" }}
         ></span>
       </div>
     );

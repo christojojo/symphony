@@ -31,7 +31,7 @@ const SocialMedia = () => {
             FOLLOW LET THE MAGIC BEGIN
           </h5>
           <div className="flex justify-center items-center">
-            <Button variant="secondary" classNames={'w-full sm:w-auto'} icon={<InstaIcon />}>Follow @ Symphony</Button>
+            <Button variant="secondary" classNames={'w-full sm:w-auto !h-[49px]'} icon={<InstaIcon />}>Follow @ Symphony</Button>
           </div>
         </div>
         <Swiper

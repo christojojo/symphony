@@ -115,7 +115,7 @@ function EventDesign() {
             <p className="text-20 md:text-[23px] 3xl:text-[23px] leading-[30px] md:leading-[35px] 3xl:leading-[35px] pb-[40px] md:pb-[66px] 3xl:pb-[66px] max-w-[685px] text-center">
               {item.content}
             </p>
-            <Button variant={item.buttonVariant} classNames={"w-full md:max-w-[170px]"}>
+            <Button variant={item.buttonVariant} classNames={"w-full md:max-w-[170px] !h-[49px]"}>
               {item.buttonText}
             </Button>
           </div>

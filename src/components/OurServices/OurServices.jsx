@@ -6,6 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Scrollbar } from "swiper/modules";
 import Button from "../Button/Button";
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 const OurServices = () => {
   const servicesData = [
     {
@@ -53,12 +57,9 @@ const OurServices = () => {
             Our Services
           </span>
           <Swiper
-            scrollbar={{
-              hide: true,
-            }}
-            pagination={{
-              type: "fraction",
-            }}
+           pagination={{
+            type: 'fraction',
+          }}
             modules={[Scrollbar, Pagination]}
             className="our-service"
           >
@@ -80,7 +81,7 @@ const OurServices = () => {
                 <div className="mt-[15px] pb-[47px]">
                   <Button
                     variant="tertiary"
-                    classNames={"!text-18 !leading-[19px]"}
+                    classNames={"!text-18 !leading-[19px] !h-[49px]"}
                   >
                     KNOW MORE
                   </Button>
