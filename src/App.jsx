@@ -25,7 +25,7 @@ function App() {
       <OurServices></OurServices>
       <OurWorks></OurWorks>
       <OurHightlights></OurHightlights>
-      {/* <Testimonials></Testimonials> */}
+      <Testimonials></Testimonials>
       <Honours></Honours>
       <Blogs></Blogs>
       <SocialMedia></SocialMedia>

@@ -1,32 +1,37 @@
-.evnt-planing{
-    width: 65%;
+.evnt-planing {
+  width: 65%;
 }
-.evnt-planing li{
-    position: relative;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .evnt-planing {
     width: 100%;
+  }
 }
-.hover-underline::after{
-content: "";
-position: absolute;
-top: 35px;
-left: 0;
-height: 2px;
-width: 0%;
-background: var(--primary-hover);
-transition: width .8s ease-in-out;
+
+.evnt-planing li {
+  position: relative;
+  width: 100%;
+}
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--primary-hover);
+  transition: width 0.8s ease-in-out;
 }
 .evnt-planing li:hover .hover-underline::after {
-    width: 100%; 
+  width: 100%;
 }
 
 .evnt-planing img {
-    transform: scale(0);
-    transition: transform .8s ease-in-out;
-    opacity: 0;
+  transform: scale(0);
+  transition: transform 0.8s ease-in-out;
+  opacity: 0;
 }
 
 .evnt-planing li:hover img {
-    transform: scale(1);
-    opacity: 1;
-} 
-
+  transform: scale(1);
+  opacity: 1;
+}

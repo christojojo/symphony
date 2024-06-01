@@ -1,0 +1,32 @@
+.swiper-slide {
+    .wrap{
+        transform: scale(0.6);
+        transition: transform .7s ease;   
+        transform-origin: bottom; 
+    }
+    // .img-section{
+    //     transform: scale(0.6);
+    //     transition: transform .7s ease;   
+    //     transform-origin: bottom;  
+    // }
+    // .content{
+    //     transform: scale(0.6);
+    //     transition: transform .7s ease;   
+    //     transform-origin: bottom;  
+    // }
+  }
+  .swiper-slide-active {
+    .wrap{
+       transform: scale(1);
+ 
+    }
+    .img-section{
+        transform: scale(1);
+    }
+    .content{
+        transform: scale(1);
+
+    }
+  }
+  
+  

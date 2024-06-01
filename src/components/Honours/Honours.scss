@@ -38,8 +38,10 @@
   }
 
   @media (max-width: 767px) {
-    .swiper-pagination {
-      display: none; /* Hide pagination */
-    }
+    .honours{
+      .swiper-pagination {
+        display: none; 
+      }
+    }  
   }
   

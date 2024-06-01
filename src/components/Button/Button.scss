@@ -6,7 +6,6 @@
   }
 }
 
-
 .btn-primary {
   @apply bg-primary
   border-primary
@@ -14,7 +13,7 @@
 
      &:hover{
       @apply bg-primaryHover
-      border-primaryHover
+      border-primaryHover      
      }
 }
 .btn-secondary {
