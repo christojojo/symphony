@@ -1,6 +1,4 @@
 
-
-
 import React from "react";
 import Assets from "../../common/Assets";
 import Button from "../Button/Button";
